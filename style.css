@@ -68,7 +68,7 @@ header a:hover{
 /*showcase*/
 #showcase{
 	min-height: 400px;
-	background: url("header.jpg");
+	background: url("header.jpg");/*https://www.backgroundcheckall.com/background-kalender-keren-4/*/
 	background-size: cover;
 	background-attachment: fixed;
 	text-align: center;
