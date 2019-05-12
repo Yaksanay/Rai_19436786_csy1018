@@ -74,7 +74,7 @@ header a:hover{
 	text-align: center;
 	color: #ffffff;
 }
-#showcase h1{
+#showcase h2{
 	margin-top: 100px;
 	font-size: 55px;
 	margin-bottom: 10px;
@@ -100,7 +100,7 @@ header a:hover{
 }
 
 /*team*/
-#team h1{
+#team h2{
 	text-align: center;
 }
 .boxes{
@@ -312,13 +312,14 @@ footer{
 		display: flex;
 		flex-direction: column-reverse;
 	}
-	h1{
+	h2{
 		font-size: 15px;
 	}
 	body{
 		font-size: 10px;
 	}
 }
+
 /*Pixel2*/
 @media only screen and (max-width: 411px) {
 	.container{
@@ -343,7 +344,7 @@ footer{
 	.learn a{
 		padding: 3px;
 	}
-	.gallery, .job1, .job3{
+	.job1, .job3{
 		display: flex;
 		flex-direction: column;
 	}
@@ -352,7 +353,8 @@ footer{
 		flex-direction: column-reverse;
 	}
 }
-/*iPad Pro*/
+
+/*iPad*/
 @media only screen and (max-width: 768px) {
 	.container{
 		width: 80%;
@@ -371,18 +373,17 @@ footer{
 		display: grid;
 		grid-template-columns: auto;
 	}
+	.gallery{
+		display: block;
+	}
+	.news img{
+		height: auto;
+	}
 	.learn{
 		display: flex;
 	}
 	.learn a{
 		padding: 3px;
-	}
-	.gallery{
-		display: grid;
-		grid-template-columns: auto auto;
-	}
-	.load{
-		height: 60%;
 	}
 	.job1, .job3{
 		display: flex;
