@@ -12,8 +12,8 @@ body{
 .container{
 	width: 80%;
 	margin: auto;
-	overflow: hidden;
-	text-align: center;
+	overflow: hidden;/*the contents on their respective place are shown and if there is more content, they are made invisible*/
+	text-align: center;/*alignes the text to the center*/
 }
 ul{
 	margin: 0;
@@ -35,7 +35,6 @@ header{
 	background-color: #35424a;
 	color: #ffffff;
 	padding-bottom: 10px;
-	min-height: 70px;
 	border-bottom: #e8491d 3px solid;
 }
 .top{
@@ -94,7 +93,7 @@ header a:hover{
 	margin-top: 15px;
 	margin-left: 50px;
 }
-#newsletter input[type="email"], .mail{
+#newsletter input{
 	padding: 4px;
 	height: 25px;
 	width: 250px;
@@ -182,7 +181,7 @@ header a:hover{
 	padding: 10px;
 }
 .jobInfo h4{
-	color: red;
+	color: #e8491d;
 	text-align: center;
 	padding-top: 20px;
 }
@@ -191,7 +190,7 @@ header a:hover{
 	padding: 5px;
 }
 .join{
-		text-align: center;
+	text-align: center;
 }
 .button{
 	text-align: center;
@@ -231,7 +230,6 @@ footer{
 	background-color: #0f1826;
 	color: #ffffff;
 	padding-top: 30px;
-	min-height: 70px;
 	border-top: #e8491d 3px solid;
 }
 .head{
@@ -278,12 +276,117 @@ footer{
 	color: #cccccc;
 	text-align: center;/*aligns the texts at the center in the row or in horizontal plane*/ 
 }
+
+/*Galaxy S5*/
 @media only screen and (max-width: 360px) {
-
+	.container{
+		width: 90%;
+	}
+	.top{
+		display: inline;
+	}
+	header ul{
+		padding-top: 0;
+	}
+	header li a{
+		font-size: 10px;
+	}
+	.button1, #newsletter input{
+		width: 100%;
+	}
+	.boxes, .head, .videos, .reviewInfo{
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.learn{
+		display: flex;
+	}
+	.learn a{
+		padding: 3px;
+	}
+	.gallery, .job1, .job3{
+		display: flex;
+		flex-direction: column;
+	}
+	.job2, .job4{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	h1{
+		font-size: 15px;
+	}
+	body{
+		font-size: 10px;
+	}
 }
+/*Pixel2*/
 @media only screen and (max-width: 411px) {
-
+	.container{
+		width: 90%;
+	}
+	.top{
+		display: inline;
+	}
+	header ul{
+		padding-top: 0;
+	}
+	.button1, #newsletter input{
+		width: 100%;
+	}
+	.boxes, .head, .videos, .reviewInfo{
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.learn{
+		display: flex;
+	}
+	.learn a{
+		padding: 3px;
+	}
+	.gallery, .job1, .job3{
+		display: flex;
+		flex-direction: column;
+	}
+	.job2, .job4{
+		display: flex;
+		flex-direction: column-reverse;
+	}
 }
+/*iPad Pro*/
 @media only screen and (max-width: 768px) {
-
+	.container{
+		width: 80%;
+	}
+	.top{
+		display: flex;
+		flex-direction: column;
+	}
+	header ul{
+		padding-top: 0;
+	}
+	.button1, #newsletter input{
+		width: 100%;
+	}
+	.boxes, .head, .videos, .reviewInfo{
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.learn{
+		display: flex;
+	}
+	.learn a{
+		padding: 3px;
+	}
+	.gallery{
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	.job1, .job3{
+		display: flex;
+		flex-direction: column;
+	}
+	.job2, .job4{
+		display: flex;
+		flex-direction: column-reverse;
+	}
 }
